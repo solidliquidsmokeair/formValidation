@@ -19,6 +19,7 @@ function validateInput (text){
     console.log(text)
 }
 
-submit.addEventListener("click", function(){
-   validateInput(accEmail)
+submit.addEventListener("click", function(event){
+    event.preventDefault()
+   validateInput(accEmail.value)
 })
