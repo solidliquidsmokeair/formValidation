@@ -15,11 +15,24 @@ var users = [
     }
 ]
 
-function validateInput (text){
-    console.log(text)
+function validateInput (){
+    if(accName.value.trim()==''){
+        console.log('no name')
+    }  else if(accEmail.value.trim()==''){
+        console.log('no email')
+    } else if(accUsername.value.trim()==''){
+        console.log('no user')
+    } else if(accPassword.value.trim()==''){
+        console.log('no pass')
+    } else{
+        users[0].name = accName.value
+        users[0].email = accEmail.value
+        users[0].username = accUsername.value
+        users[0].password = accPassword.value
+    }
 }
 
 submit.addEventListener("click", function(event){
     event.preventDefault()
-   validateInput(accEmail.value)
+   validateInput()
 })
