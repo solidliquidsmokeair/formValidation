@@ -1,7 +1,22 @@
+body {
+    margin: 0;
+
+}
+
 .container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+.socialLogo{
+    width: 400px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 70px;
 }
 
 .header {
@@ -11,6 +26,7 @@
 
 .formTitle {
     font-family: Arial, Helvetica, sans-serif;
+    color: #3274B5;
 }
 
 .signUpBox {
@@ -18,6 +34,10 @@
     border-radius: 5px;
     box-shadow: 0px 0px 10px #00000081;
     padding: 10px;
+    padding-bottom: 30px;
+    align-self: c;
+    margin-top: 100px;
+    height: 330px;
 }
 
 .formControl {
@@ -39,7 +59,7 @@
     height: 35px;
     width: 300px;
     border-radius: 1px;
-    background-color: rgb(73, 73, 197);
+    background-color: #3274B5;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bolder;
@@ -49,6 +69,7 @@
 .signIn {
     font-family: Arial, Helvetica, sans-serif;
     text-align: right;
+    color: white;
 }
 
 small {
