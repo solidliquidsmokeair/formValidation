@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #3274B5;
 
 }
 
@@ -38,6 +39,17 @@ body {
     align-self: c;
     margin-top: 100px;
     height: 330px;
+}
+
+.signInBox {
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00000081;
+    padding: 10px;
+    padding-bottom: 30px;
+    align-self: c;
+    margin-top: 100px;
+    height: 210px;
 }
 
 .formControl {
