@@ -3,6 +3,8 @@ let accEmail = document.querySelector('.emailField')
 let accUsername = document.querySelector('.usernameField')
 let accPassword = document.querySelector('.passwordField')
 
+let nameErr = document.getElementsByClassName('.nameErr')
+
 let submit = document.getElementById('submit')
 
 var users = [
@@ -17,7 +19,9 @@ var users = [
 
 function validateInput (){
     if(accName.value.trim()==''){
-        console.log('no name')
+        let messageEle=parent.querySelector('.nameErr');
+        messageEle.style.visibility="visible";
+        messageEle.innerText="user name cannot be empty"
     }  else if(accEmail.value.trim()==''){
         console.log('no email')
     } else if(accUsername.value.trim()==''){
