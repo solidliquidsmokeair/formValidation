@@ -49,7 +49,7 @@ body {
     padding-bottom: 30px;
     align-self: c;
     margin-top: 100px;
-    height: 210px;
+    height: 260px;
 }
 
 .formControl {
@@ -67,7 +67,18 @@ body {
     justify-content: flex-start;
 }
 
-#submit {
+#signInButton {
+    height: 35px;
+    width: 300px;
+    border-radius: 1px;
+    background-color: #3274B5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+}
+
+#signUpButton {
     height: 35px;
     width: 300px;
     border-radius: 1px;
@@ -81,7 +92,15 @@ body {
 .signIn {
     font-family: Arial, Helvetica, sans-serif;
     text-align: right;
-    color: white;
+    color: black;
+}
+
+.signUpText {
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    color: black;
+    position: relative;
 }
 
 small {
@@ -102,4 +121,22 @@ input {
     font-size: 15px;
     border-radius: 4px;
     border-style: hidden;
+}
+
+.nameErr {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: red;
+    margin-left: 3px;
+}
+
+.passErr {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: red;
+    margin-left: 3px;
+}
+
+h3{
+    margin: 6px;
 }
